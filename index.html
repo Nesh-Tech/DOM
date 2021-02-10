@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+<body>
+    <h1 id="demo"></h1>
+    <p>This is a paragraph</p>
+    <div class="first-class">class value1</div>
+    <div class="first-class">class value2</div>
+    <p class="demo-class">One</p>
+    <p class="one">two</p>
+
+    <script>
+        var element = document.getElementById('demo').innerHTML = "InnerHTML";
+        console.log(document.getElementById('demo').attributes);
+        console.log(document.getElementsByClassName('first-class'));
+        console.log(document.querySelectorAll('p.one'));
+    </script>
+</body>
+</html>
